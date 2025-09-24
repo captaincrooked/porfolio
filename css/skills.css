@@ -1,6 +1,6 @@
 /* --- Modern Skills Page Styles --- */
 .skills-main-card {
-    background: var(--background-card);
+    
     border-radius: 18px;
     box-shadow: 0 4px 24px rgba(0,0,0,0.10);
     margin: 32px auto; /* Adjusted to match .about-card */
@@ -11,7 +11,7 @@
 }
 
 .skills-title {
-    color: var(--primary-color);
+    color: var(--text-dark);
     text-align: center;
     margin-bottom: 32px;
     font-size: 3.5rem;
@@ -21,7 +21,7 @@
 /* Card specific styles */
 .skills-main-card .card {
     border: none;
-    background-color: var(--background-dark);
+    /* background-color: var(--background-dark); */
     transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 }
 
@@ -52,7 +52,7 @@
     background-color: transparent;
     border: none;
     padding: 0.5rem 0;
-    color: var(--text-light);
+    color: var(--text-dark);
     font-size: 1rem;
     font-weight: 500;
 }

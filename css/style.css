@@ -3,7 +3,7 @@
 
 main h1 {
     /* Bootstrap's display-3 and fw-bold classes handle font size and weight */
-    color: var(--text-light); /* Ensure text is readable against dark background */
+    color: var(--text-dark); /* Ensure text is readable against dark background */
     margin-top: 20px;
 }
 
@@ -26,7 +26,7 @@ main img {
 }
 
 .contact-button {
-    background: var(--secondary-color);
+    background: #9d0a0a;
     border: none;
     border-radius: 20px;
     color: var(--text-light);
