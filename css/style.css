@@ -1,20 +1,9 @@
-.contact-button {
-    background: var(--secondary-color);
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    color: var(--text-light);
-    cursor: pointer;
-}
-
-
-
 /* home */
 
 
 main h1 {
     /* Bootstrap's display-3 and fw-bold classes handle font size and weight */
-    color: var(--text-dark); /* Ensure text is readable against dark background */
+    color: var(--text-light); /* Ensure text is readable against dark background */
     margin-top: 20px;
 }
 
