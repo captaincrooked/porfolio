@@ -1,0 +1,82 @@
+/* --- Modern Skills Page Styles --- */
+.skills-main-card {
+    /* background: var(--background-card); */
+    border-radius: 18px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+    margin: 32px auto; /* Adjusted to match .about-card */
+    max-width: 900px;
+    padding: 32px 40px; /* Adjusted to match .about-card */
+    transition: box-shadow 0.3s;
+    
+}
+
+.skills-title {
+    color: var(--text-dark);
+    text-align: center;
+    margin-bottom: 32px;
+    font-size: 3.5rem;
+    letter-spacing: 2px;
+}
+
+/* Card specific styles */
+.skills-main-card .card {
+    border: none;
+    /* background-color: var(--background-dark); */
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.skills-main-card .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15) !important;
+}
+
+.skills-main-card .card-body {
+    padding: 2rem;
+}
+
+.skills-section-title {
+    color: var(--primary-color); /* Changed to primary color for consistency */
+    font-size: 1.5rem; /* Slightly larger for card titles */
+    margin-bottom: 1rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+}
+
+.skills-section-title i {
+    font-size: 1.8rem; /* Icon size */
+    margin-right: 0.5rem;
+}
+
+.skills-list .list-group-item {
+    background-color: transparent;
+    border: none;
+    padding: 0.5rem 0;
+    color: var(--text-dark);
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.skills-list .list-group-item a {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.skills-list .list-group-item a:hover {
+    text-decoration: underline !important;
+}
+
+@media (max-width: 900px) {
+    .skills-main-card {
+        padding: 24px 10px;
+    }
+    .skills-title {
+        font-size: 2rem;
+    }
+    .skills-section-title {
+        font-size: 1.3rem;
+    }
+    .skills-section-title i {
+        font-size: 1.5rem;
+    }
+}

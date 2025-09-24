@@ -1,0 +1,103 @@
+.contact-button {
+    background: var(--secondary-color);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    color: var(--text-light);
+    cursor: pointer;
+}
+
+
+
+/* home */
+
+
+main h1 {
+    /* Bootstrap's display-3 and fw-bold classes handle font size and weight */
+    color: var(--text-dark); /* Ensure text is readable against dark background */
+    margin-top: 20px;
+}
+
+main img {
+    /* Bootstrap's img-fluid, rounded-circle, shadow-lg classes handle responsiveness and styling */
+    /* Removed fixed width and margin-left */
+    clip-path: circle(50% at 50% 50%); /* Keep the circular clip-path */
+    object-fit: cover;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    main h1 {
+        font-size: 2.5rem; /* Adjust font size for smaller screens */
+    }
+    .contact-button {
+        font-size: 1.2rem; /* Adjust button font size for smaller screens */
+        padding: 8px 16px;
+    }
+}
+
+.contact-button {
+    background: var(--secondary-color);
+    border: none;
+    border-radius: 20px;
+    color: var(--text-light);
+    cursor: pointer;
+    text-decoration: none;
+    /* Padding and font-size are now handled by Bootstrap classes and media queries */
+}
+
+
+footer {
+    background: var(--background-card);
+    color: var(--text-light);
+    text-align: left;
+    justify-content: flex-start;
+    padding: 10px ;
+    margin-top: 40px;
+}
+
+/* Contact Page Styles */
+.contact-hero {
+    
+    padding: 50px 20px;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+  
+    
+}
+.contact-hero h1, .contact-hero h3, .contact-hero p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    --text-light: #4b4b4b;
+    --text-dark: #222;
+    
+}
+.contact-hero ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    
+}
+.contact-hero ul li {
+    margin-bottom: 10px;
+    text-decoration: none;
+    display: inline-block;
+    list-style: none;
+    align-items: center;
+    padding: 20px ;
+    
+}
+.contact-hero ul li a {
+    text-decoration: none;
+    color: rgb(59, 59, 59);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

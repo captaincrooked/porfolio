@@ -1,0 +1,125 @@
+/* --- About Page Specific Styles --- */
+.about-hero {
+    background: linear-gradient(90deg, var(--primary-color) 0%, var(--background-card) 100%);
+    padding: 40px 0 20px 0;
+}
+.about-card {
+    background: var(--background-card);
+    border-radius: 18px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+    margin: 32px auto;
+    max-width: 900px;
+    padding: 32px 40px;
+    transition: box-shadow 0.3s;
+}
+.about-card:hover {
+    box-shadow: 0 8px 32px rgba(12,140,183,0.15);
+}
+.about-hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+.about-hero-text {
+    flex: 2;
+}
+.about-hero-img {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+.about-hero-img img {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 2px 16px rgba(12,140,183,0.10);
+    border: 6px solid var(--text-light);
+    background: var(--background-dark);
+}
+.about-card h1, .about-card h2, .about-card h3 {
+    color: var(--primary-color);
+    margin-bottom: 12px;
+}
+.about-card p {
+    color: var(--text-light);
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+.about-education-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    margin-top: 24px;
+}
+.about-education-item {
+    display: flex;
+    align-items: center;
+    background: var(--background-dark);
+    border-radius: 12px;
+    padding: 18px 24px;
+    flex: 1 1 350px;
+    min-width: 280px;
+    gap: 20px;
+    box-shadow: 0 2px 8px rgba(12,140,183,0.06);
+}
+.about-education-item img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 16px;
+    background: var(--background-dark);
+}
+.about-experience-content {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+.about-experience-content > div {
+    flex: 2;
+}
+.about-experience-img {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+.about-experience-img img {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 24px;
+    box-shadow: 0 2px 16px rgba(12,140,183,0.10);
+    background: var(--background-dark);
+}
+.about-skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-top: 16px;
+    padding: 0;
+    list-style: none;
+}
+.about-skills-list li {
+    background: var(--primary-color);
+    color: var(--text-dark);
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 1rem;
+    box-shadow: 0 1px 4px rgba(12,140,183,0.10);
+}
+@media (max-width: 900px) {
+    .about-hero-content, .about-experience-content, .about-education-list {
+        flex-direction: column;
+        gap: 24px;
+    }
+    .about-card {
+        padding: 24px 10px;
+    }
+    .about-hero-img img, .about-experience-img img {
+        width: 160px;
+        height: 160px;
+    }
+}
